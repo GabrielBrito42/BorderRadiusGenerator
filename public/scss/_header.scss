@@ -1,0 +1,61 @@
+.header {
+  text-align: center;
+
+  &__links {
+    margin: 0.5em auto 0;
+    padding-top: 0.25em;
+    max-width: 26.75rem;
+  
+
+    a {
+      font-size: 0.75rem;
+      color: $pink;
+      text-decoration: none;
+      opacity: 0.8;      transition: opacity 0.3s ease-out;
+      
+      svg {
+        width: 1.35em;
+        height: 1.35em;
+        fill: $black;
+        vertical-align: -0.3em;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    
+  }
+  &__button{
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    background: $black;
+    border: none;
+    color: rgba($white, 0.9);
+    padding: 0.5em 1em;
+    font-weight: italic;
+    width: 100%;
+    transition: background 0.4s ease-in;
+    will-change: background;
+    cursor: pointer;
+
+    &:hover{
+      background: $purple;
+    }
+  }
+
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgba(50, 255, 0, 0.4); opacity:0.9;
+  margin: 0 0 0.125em;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  @media screen and (min-height: 36.25rem) and (min-width:25rem) {
+    font-size: 2rem;
+  }
+}

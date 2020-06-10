@@ -1,0 +1,53 @@
+<body>
+  <div class="header">
+    <h1>Gerador de Border Radius</h1>
+    <div class="header__links">
+      <a href="http://localhost:3000/">
+        <button class="header__button">Border Radius</button>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="generator" id="box">
+          <div class="generator__shape generator__shape--8v" id="shape"></div>
+          <span class="generator__handle generator__handle--8v generator__handle--second" id="leftBottom"></span>
+          <span class="generator__handle generator__handle--8v generator__handle--third" id="topRight"></span>
+          <span class="generator__handle generator__handle--8v generator__handle--fourth" id="rightBottom"></span>
+          <span class="generator__handle generator__handle--8v generator__handle--fourth" id="bottomRight"></span>
+          <span class="generator__handle generator__handle--8v" id="left"></span>
+          <span class="generator__handle generator__handle--8v" id="top"></span>
+          <span class="generator__handle generator__handle--8v generator__handle--third" id="right"></span>
+          <span class="generator__handle generator__handle--8v generator__handle--second" id="bottom"></span>
+
+        </div>
+        <div>
+          <div class="output">
+            <div class="output__label">border-radius:</div>
+            <div class="input-group">
+              <span type="text" class="output__code" id="code">
+                10% 10% 10% 10% / 10% 10% 10% 10%
+              </span>
+              <button class="output__button" id="copy">copy</button>
+            </div>
+          </div>
+          <div class="advanced">
+            <div class="advanced__switch">
+              <input class="advanced__check" type="checkbox" id="enable-advanced">
+              <label class="advanced__trigger" for="enable-advanced">Custom size:
+                <span></span>
+              </label>
+            </div>
+            <div class="advanced__settings" id="dimension-input">
+              <div class="input-group">
+                <label for="width">Width:</label>
+                <input id="width" type="number" min="5" max="2000" value="300" />
+              </div>
+              <div class="input-group">
+                <label for="height">Height:</label>
+                <input id="height" type="number" min="5" max="2000" value="300" />
+              </div>
+            </div>
+  </div>
+</div>
+<div id="clipboard_copied"></div>
+<script type="text/javascript" src="mainFull.js"></script>
